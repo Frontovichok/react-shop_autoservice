@@ -1,25 +1,32 @@
 const initialState = {
-    books: [
-        {
-            id: 0,
-            title: 'Джордж Оруэл',
-        },
-    ],
+    isReady: false,
+    items: null,
+    sortBy: 'popular',
+    searchQuery: ''
 };
 
 export default (state = initialState, action) => {
     switch (action.type) {
         case 'SET_BOOKS':
-            console.log(new Date().toLocaleString());
-
             return {
                 ...state,
-                books: action.payload,
+                items: action.payload,
+                isReady: true,
             };
-        case 'ADD_BOOKS':
+        case 'SET_READY_STATE':
             return {
                 ...state,
-                books: [...state.books, action.payload],
+                items: action.payload,
+            };
+        case 'SET_SORTING':
+            return {
+                ...state,
+                sortBy: action.payload
+            };
+        case 'SET_SEARCH_QUERY':
+            return {
+                ...state,
+                searchQuery: action.payload
             };
         default:
             return state;

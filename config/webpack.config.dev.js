@@ -1,5 +1,6 @@
 'use strict';
 
+const babelPolyfill = require("babel-polyfill");
 const fs = require('fs');
 const path = require('path');
 const resolve = require('resolve');
@@ -94,8 +95,12 @@ module.exports = {
     // the line below with these two lines if you prefer the stock client:
     // require.resolve('webpack-dev-server/client') + '?/',
     // require.resolve('webpack/hot/dev-server'),
-    require.resolve('react-dev-utils/webpackHotDevClient'),
+
+    // require.resolve('react-dev-utils/webpackHotDevClient'),
+
     // Finally, this is your app's code:
+    "babel-polyfill",
+
     paths.appIndexJs,
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
@@ -312,6 +317,10 @@ module.exports = {
               },
               'sass-loader'
             ),
+          },
+          {
+            test: /\.styl$/,
+            loader: 'style-loader!css-loader!stylus-loader'
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.

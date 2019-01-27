@@ -114,7 +114,7 @@ module.exports = {
   // You can exclude the *.map files from the build during deployment.
   devtool: shouldUseSourceMap ? 'source-map' : false,
   // In production, we only want to load the app code.
-  entry: [paths.appIndexJs],
+  entry: ["./src/index.js"],
   output: {
     // The build folder.
     path: paths.appBuild,
@@ -402,6 +402,10 @@ module.exports = {
               },
               'sass-loader'
             ),
+          },
+          {
+              test: /\.styl$/,
+              loader: 'style-loader!css-loader!stylus-loader'
           },
           // "file" loader makes sure assets end up in the `build` folder.
           // When you `import` an asset, you get its filename.

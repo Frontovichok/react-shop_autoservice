@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Capture it';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/capture-it.woff) format('woff');
+}
+@font-face {
+    font-family: 'Capture it 2';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/capture-it-2.otf);
+}
+
+.clipped-title {
+	background: url(https://blog.efarby.sk/wp-content/uploads/media/kovove-pozadie-940x198.jpg);
+	/*background-size: cover;*/
+	margin-left: 1rem;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+.clipped-title .title {
+	font-family: 'Capture it', arial;
+	font-size: 5rem;
+	text-shadow: 0 0 1px rgba(0,0,0,.1);
+	margin: 0;
+	padding: 0;
+}
