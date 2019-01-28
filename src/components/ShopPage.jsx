@@ -14,11 +14,11 @@ import LongModal from './LongModal';
 class App extends Component {
     async componentWillMount() {
         const { setBooks } = this.props;
-        let books = await fetch('/books.json').then((response) =>
+        let books = await fetch('/products.json').then((response) =>
             response.json()
         );
         console.log(books);
-        fetch('/books.json')
+        fetch('/products.json')
             .then((response) => response.json())
             .then(function(data) {
                 setBooks(data);

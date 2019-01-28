@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "title": "Моторное масло Shell Helix HX8 ECT 5W-30",
+    "image":
+    "https://ozon-st.cdn.ngenix.net/multimedia/c300/1026431750.JPG",
+    "price": 710,
+    "rating": 3
+  },
+  {
+    "id": 1,
+    "title": "Масло моторное IDEMITSU ZEPRO EURO SPEC",
+    "image":
+    "https://ozon-st.cdn.ngenix.net/multimedia/c300/1022220336.jpg",
+    "price": 415,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "title": "Масло моторное \"ZIC\" X7, синтетическое, класс вязкости 5W-40, API SN/SF, 4 л. 162662",
+    "image":
+    "https://ozon-st.cdn.ngenix.net/multimedia/c300/1018418335.jpg",
+    "price": 464,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "title": "Масло моторное Shell Helix HX8 Synthetic",
+    "image":
+    "https://ozon-st.cdn.ngenix.net/multimedia/c300/1026431727.JPG",
+    "price": 741,
+    "rating": 2
+  },
+  {
+    "id": 4,
+    "title": "Масло моторное IDEMITSU \"ZEPRO TOURING\"",
+    "image":
+    "https://ozon-st.cdn.ngenix.net/multimedia/c300/1022220337.jpg",
+    "price": 317,
+    "rating": 1
+  },
+  {
+    "id": 5,
+    "title": "Масло моторное Hyundai Xteer Gasoline Ultra Protection",
+    "image":
+    "https://ozon-st.cdn.ngenix.net/multimedia/c300/1018021764.jpg",
+    "price": 254,
+    "rating": 1
+  }
+]

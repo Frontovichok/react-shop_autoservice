@@ -17,7 +17,7 @@ const sortBooks = (books, sortBy) => {
         case 'price_high':
             return orderBy(books, 'price', 'desc');
         case 'rating':
-            return books;
+            return orderBy(books, 'rating', 'desc');
         default:
             return books;
     }
@@ -28,8 +28,6 @@ const filterBooks = (books, searchQuery) => {
         books = books.filter(
             (book) =>
                 book.title.toLowerCase().indexOf(searchQuery.toLowerCase()) >=
-                0 ||
-                book.author.toLowerCase().indexOf(searchQuery.toLowerCase()) >=
                 0
         );
     }

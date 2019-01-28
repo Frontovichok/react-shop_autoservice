@@ -1,18 +1,17 @@
 import React from 'react';
-import { Card, Icon, Image, Button } from 'semantic-ui-react';
+import { Card, Icon, Image, Button, Rating } from 'semantic-ui-react';
 
 const BookCard = (book) => {
-    const { title, author, image, price, addToCart, addedCount } = book;
+    const { title, image, rating, price, addToCart, addedCount } = book;
+    console.log(title, rating);
     return (
         <Card>
             <Image src={image} />
             <Card.Content>
                 <Card.Header>{title}</Card.Header>
-                <Card.Meta>
-                    <span className="date">{author}</span>
-                </Card.Meta>
-                <Card.Description>Описание книги</Card.Description>
+                <Card.Description>Ниличие</Card.Description>
             </Card.Content>
+            <Rating icon='star' rating={rating} maxRating={5} disabled />
             <Card.Content extra>
                 <Icon name="rub" />
                 {price}

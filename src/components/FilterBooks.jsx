@@ -16,8 +16,8 @@ export default class MenuExampleText extends Component {
                     active={activeItem === 'promotions'}
                     onClick={this.handleItemClick}>
                     <Header as="h4">Запчасти</Header>
-                    <p>запяасть 1</p>
-                    <p>запяасть 2</p>
+                    <p>запчасть 1</p>
+                    <p>запчасть 2</p>
                 </Menu.Item>
 
                 <Menu.Item
