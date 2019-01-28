@@ -5,7 +5,7 @@ import Header from '../containers/Header';
 const NotFound = () => (
     <React.Fragment>
         <Header />
-        <h4>
+        <h4 style={{textAlign: "center"}}>
             Repair
         </h4>
     </React.Fragment>

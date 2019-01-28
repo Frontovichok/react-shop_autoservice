@@ -29,7 +29,7 @@ class App extends Component {
     }
     render() {
         const { books, isReady } = this.props;
-        const isMobile = window.innerWidth <= 500;
+        const isMobile = window.innerWidth <= 1000;
         return (
             <React.Fragment>
                 <Header />

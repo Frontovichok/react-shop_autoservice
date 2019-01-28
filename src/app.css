@@ -346,6 +346,13 @@ body {
   .ui.card>.content>.header {
     word-wrap: break-word;
   }
+  .ui.four.doubling.cards {
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .ui.four.doubling.cards .ui.card {
+    margin: 1em 0 !important;
+  }
   .carousel__slider-tray {
     width: 500% !important;
   }
