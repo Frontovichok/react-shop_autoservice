@@ -6,6 +6,7 @@ import ServiceSection from './ServiceSection';
 const cardsArray = [
     {
         cardsName: 'Ремонт',
+        link: './repair',
         cards: [
             {
                 title: 'Двигатель',
@@ -39,6 +40,7 @@ const cardsArray = [
     },
     {
         cardsName: 'Сервисное обслуживание',
+        link: './service',
         cards: [
             {
                 title: 'Шиномонтаж',
@@ -65,6 +67,7 @@ const cardsArray = [
     },
     {
         cardsName: 'Автозапчасти',
+        link: './shop',
         cards: [
             {
                 title: 'Масла',
@@ -98,6 +101,7 @@ const TabExampleSecondaryPointing = () => (
     <Container>
         <div className="customer-service">
             <h1 className="customer-service__title">Услуги</h1>
+            <p className="customer-service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aspernatur consequatur cupiditate debitis ea eveniet ex exercitationem hic id ipsam iure laboriosam, maxime molestias mollitia nihil nulla praesentium provident quidem quisquam!</p>
             <div className="customer-service__wrap">
                 {cardsArray.map((cards, i) => (
                     <ServiceSection cardsObj={cards} key={i} />

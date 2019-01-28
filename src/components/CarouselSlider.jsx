@@ -8,20 +8,20 @@ export default class extends React.Component {
             {
                 backgroundImage:
                     'linear-gradient(to right, rgba(23, 33, 35, 0.3), rgba(23, 33, 35, 0.55), rgba(23, 33, 35, 0.6), rgba(23, 33, 35, 0.55), rgba(23, 33, 35, 0.3)), url(/slide_1.jpg)',
-                title: 'Автомастерская NFS 1',
-                description: 'Лучшая мастерская в Моздоке 1',
+                title: 'Автомастерская 1',
+                description: 'Лучшая мастерская 1',
             },
             {
                 backgroundImage:
                     'linear-gradient(to right, rgba(23, 33, 35, 0.3), rgba(23, 33, 35, 0.55), rgba(23, 33, 35, 0.6), rgba(23, 33, 35, 0.55), rgba(23, 33, 35, 0.3)), url(/slide_2.jpg)',
-                title: 'Автомастерская NFS 2',
-                description: 'Лучшая мастерская в Моздоке 2',
+                title: 'Автомастерская 2',
+                description: 'Лучшая мастерская 2',
             },
             {
                 backgroundImage:
                     'linear-gradient(to right, rgba(23, 33, 35, 0.3), rgba(23, 33, 35, 0.55), rgba(23, 33, 35, 0.6), rgba(23, 33, 35, 0.55), rgba(23, 33, 35, 0.3)), url(/slide_3.jpg)',
-                title: 'Автомастерская NFS 3',
-                description: 'Лучшая мастерская в Моздоке 3',
+                title: 'Автомастерская 3',
+                description: 'Лучшая мастерская 3',
             },
         ];
         return (

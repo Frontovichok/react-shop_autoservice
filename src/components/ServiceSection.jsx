@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import CardsCarouselDesktop from './CardsCarouselDesktop';
 import CardsCarouselMobile from './CardsCarouselMobile';
@@ -9,15 +10,15 @@ export default class CustomerSection extends React.Component {
         console.log(isMobile);
         return (
             <section className="customer-service__section">
-                <a href="/repair" className="customer-service__link">
+                <Link to={this.props.cardsObj.link} className="customer-service__link">
                     {this.props.cardsObj.cardsName}
-                </a>
+                </Link>
                 {isMobile ? (
                     <CardsCarouselMobile cardsObj={this.props.cardsObj} />
                 ) : (
                     <CardsCarouselDesktop cardsObj={this.props.cardsObj} />
                 )}
-                </section>
+            </section>
         );
     }
 }

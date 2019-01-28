@@ -15,27 +15,27 @@ export default class MenuExampleText extends Component {
                     name="promotions"
                     active={activeItem === 'promotions'}
                     onClick={this.handleItemClick}>
-                    <Header as="h4">Promotions</Header>
-                    <p>Check out our new promotions</p>
+                    <Header as="h4">Запчасти</Header>
+                    <p>запяасть 1</p>
+                    <p>запяасть 2</p>
                 </Menu.Item>
 
                 <Menu.Item
                     name="coupons"
                     active={activeItem === 'coupons'}
                     onClick={this.handleItemClick}>
-                    <Header as="h4">Coupons</Header>
-                    <p>Check out our collection of coupons</p>
+                    <Header as="h4">Масла</Header>
+                    <p>Масло 1</p>
+                    <p>Масло 2</p>
                 </Menu.Item>
 
                 <Menu.Item
                     name="rebates"
                     active={activeItem === 'rebates'}
                     onClick={this.handleItemClick}>
-                    <Header as="h4">Rebates</Header>
-                    <p>
-                        Visit our rebate forum for information on claiming
-                        rebates
-                    </p>
+                    <Header as="h4">Диски</Header>
+                    <p>Диск 1</p>
+                    <p>Диск 2</p>
                 </Menu.Item>
             </Menu>
         );

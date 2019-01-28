@@ -6,8 +6,7 @@ const NotFound = () => (
     <React.Fragment>
         <Header />
         <h4>
-            Страница не найдена (в будущем здесь будет какая-нидь игра напр -
-            ТЕТРИС)
+            Repair
         </h4>
     </React.Fragment>
 );

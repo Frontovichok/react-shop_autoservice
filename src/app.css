@@ -78,6 +78,9 @@ body {
 .ui.celled.grid>.row>.column {
   padding: 0;
 }
+.ui.grid>.row>.column.main_column {
+  box-shadow: none;
+}
 .carousel__slide {
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,6 +135,9 @@ body {
   position: relative;
   margin-top: 50px !important;
   margin-bottom: 30px;
+}
+.customer-service__description {
+  font-size: 1.6em;
 }
 .customer-service__wrap {
   display: flex;
@@ -261,6 +267,9 @@ body {
   justify-content: center;
   width: 100%;
 }
+.footer .about__wrap.wrap {
+  flex-wrap: wrap;
+}
 .footer .about {
   display: flex;
   align-items: center;
@@ -291,6 +300,9 @@ body {
 }
 .footer__map {
   width: 60%;
+}
+.footer__map.full-width {
+  width: 100%;
 }
 @media only screen and (max-width: 1025px) {
   .ui.container {
@@ -327,6 +339,12 @@ body {
   }
   .ui.selection.dropdown {
     min-width: 12em;
+  }
+  .customer-service__title {
+    padding: 0 1em;
+  }
+  .customer-service__description {
+    padding: 0 1em;
   }
   .customer-service__wrap .customer-service__section {
     padding: 30px 15px;

@@ -84,7 +84,9 @@ body
 
 .ui.celled.grid>.row>.column
   padding: 0
-
+.ui.grid>.row>.column.main_column {
+  box-shadow none;
+}
 .carousel__slide {
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,12 +143,14 @@ body
 
 
 .customer-service {
-  //padding 0 1rem
   &__title {
     text-align: center;
     position: relative;
     margin-top: 50px !important;
     margin-bottom: 30px;
+  }
+  &__description {
+    font-size: 1.6em;
   }
 }
 
@@ -280,6 +284,9 @@ body
     align-items center
     justify-content center
     width: 100%;
+    &.wrap {
+      flex-wrap: wrap;
+    }
   }
   .about {
     display flex
@@ -311,6 +318,9 @@ body
   }
   &__map {
     width 60%
+    &.full-width {
+      width 100%;
+    }
   }
 }
 
@@ -348,6 +358,15 @@ body
 
   .ui.selection.dropdown
     min-width 12em
+
+  .customer-service {
+    &__title {
+      padding 0 1em
+    }
+    &__description {
+      padding 0 1em
+    }
+  }
 
   .customer-service__wrap .customer-service__section {
     padding: 30px 15px;
