@@ -5,7 +5,6 @@ import { Menu } from 'semantic-ui-react';
 const SecondMenu = () => (
     <Menu
         defaultActiveIndex={1}
-        stackable
         className="custom__menu custom__menu_second">
         <Menu.Item
             as={NavLink}

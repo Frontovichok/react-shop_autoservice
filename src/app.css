@@ -322,8 +322,16 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .ui.menu.custom__menu.custom__menu_second {
+  .ui.menu.custom__menu.custom__menu_first {
     display: none;
+  }
+  .ui.menu.custom__menu.custom__menu_second {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .ui.menu.custom__menu.custom__menu_second .item {
+    padding: 1em 0;
+    font-size: 0.9em;
   }
   .ui.icon.menu {
     flex-direction: row;
