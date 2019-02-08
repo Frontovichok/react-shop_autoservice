@@ -6,9 +6,9 @@ import 'dragscroll';
 import { default as Card } from './ServiceCard';
 
 const CardsCarouselDesktop = (props) => (
-    <PerfectScrollbar className="customer-service__cards">
+    <PerfectScrollbar suppressScrollY={true} suppressScrollX={true} suppressScrollX={false} className="customer-service__cards">
         {props.cardsObj.cards.map((card, i) => (
-            <Card {...card} key={i} />
+            <Card {...card} key={i}/>
         ))}
     </PerfectScrollbar>
 );

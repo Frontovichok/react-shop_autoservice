@@ -31,7 +31,8 @@ export default class extends React.Component {
                 totalSlides={3}
                 isPlaying={true}
                 hasMasterSpinner={false}
-                interval={5000}>
+                interval={5000}
+                data-slideout-ignore>
                 <Slider>
                     {carouselSliderData.map((slider, i) => (
                         <Slide

@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 import FirstMenu from './FirstMenu';
 import SecondMenu from './SecondMenu';
+import SlideMenuMobile from './SlideMenuMobile';
 
 export default class MenuExampleStackable extends Component {
     // state = { activeItem: 'home' };
@@ -11,12 +12,19 @@ export default class MenuExampleStackable extends Component {
     // handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
     render() {
+        const isMobile = window.innerWidth <= 1000;
         // const { activeItem } = this.state;
 
         return (
             <React.Fragment>
-                <FirstMenu />
-                <SecondMenu />
+                {isMobile ? (
+                    <SlideMenuMobile />
+                ) : (
+                    <React.Fragment>
+                        <FirstMenu />
+                        <SecondMenu />
+                    </React.Fragment>
+                )}
             </React.Fragment>
         );
     }

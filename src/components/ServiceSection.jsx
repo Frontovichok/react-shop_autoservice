@@ -7,7 +7,6 @@ import CardsCarouselMobile from './CardsCarouselMobile';
 export default class CustomerSection extends React.Component {
     render() {
         const isMobile = window.innerWidth < 1025;
-        console.log(isMobile);
         return (
             <section className="customer-service__section">
                 <Link to={this.props.cardsObj.link} className="customer-service__link">

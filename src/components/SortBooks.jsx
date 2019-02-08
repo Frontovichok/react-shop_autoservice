@@ -11,7 +11,7 @@ const options = [
 ];
 
 const SortBooks = ({ setSorting, sortBy }) => {
-    const handleChange = (e, { value }) => {
+    const handleChange = (e, {value}) => {
         setSorting(value);
     };
     return (

@@ -14,7 +14,7 @@ class Footer extends React.Component {
                         <Contacts />
                     </div>
                     <React.Suspense fallback={<div>Loading...</div>}>
-                        <YandexMap class="footer__map" />
+                        <YandexMap class="footer__map" height={400}/>
                     </React.Suspense>
                 </div>
                 {/*<div>Автомасерская NFS 2019</div>*/}

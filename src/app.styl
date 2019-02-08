@@ -1,3 +1,5 @@
+@import "hamburgers.css";
+
 *
   box-sizing border-box
 
@@ -10,6 +12,7 @@ body
   background-attachment fixed
   background-repeat round
   height auto
+  touch-action: manipulation
 
 .ui.container
   width 1320px
@@ -29,9 +32,6 @@ body
     }
   }
   &.custom__menu_second {
-    position sticky
-    top: 0
-    z-index: 1000;
     .item {
       color #4c5157
       padding: 1.2em 1.5em;
@@ -345,11 +345,20 @@ body
     display none;
   }
   .ui.menu.custom__menu.custom__menu_second {
-    flex-direction row;
-    justify-content space-evenly;
+    flex-direction column;
+    align-items: baseline;
+    box-shadow: none;
+    background-color: transparent;
     .item {
-      padding: 1em 0;
-      font-size: 0.9em;
+      color: #989898;
+      font-size: 16px;
+      padding: 10px 20px;
+      &.active {
+        border-top: none;
+      }
+      .icon {
+        margin-right: 20px;
+      }
     }
   }
   .ui.icon.menu
@@ -370,6 +379,27 @@ body
     margin: 0;
     .ui.card {
       margin: 1em 0 !important;
+    }
+  }
+  .header-page {
+    display: flex;
+    align-items: center;
+    background-color: #42b3ff;
+    justify-content: center;
+    padding: 0 1em;
+    &__title {
+      color: white;
+      font-size: 20px;
+      padding: 15px 15px;
+      margin: 0 auto;
+    }
+    i.icon&__cart {
+      font-size: 20px !important;
+      color: white;
+    }
+    .toggle-menu__button {
+      padding: 10px 0;
+      line-height: 0;
     }
   }
 
